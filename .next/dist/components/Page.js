@@ -34,6 +34,10 @@ var _Nav = require('react-bootstrap/lib/Nav');
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
+var _NavItem = require('react-bootstrap/lib/NavItem');
+
+var _NavItem2 = _interopRequireDefault(_NavItem);
+
 var _Form = require('react-bootstrap/lib/Form');
 
 var _Form2 = _interopRequireDefault(_Form);
@@ -47,45 +51,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = '/Users/steven/Documents/GitHub/ham/invision/example/with-redux/components/Page.js';
 // import { Button } from 'react-bootstrap'
 
-// import Layout                 from '../components/Layout';
+
+// TODO: NEXT, on the second page make a div with an input amd figure out where the number is being stored and store it there.
 
 
-// const buttonsInstance = (
-//   <ButtonToolbar>
-//     {/* Standard button */}
-//     <Button>Default</Button>
-
-//     {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
-//     <Button bsStyle="primary">Primary</Button>
-
-//     {/* Indicates a successful or positive action */}
-//     <Button bsStyle="success">Success</Button>
-
-//     {/* Contextual button for informational alert messages */}
-//     <Button bsStyle="info">Info</Button>
-
-//     {/* Indicates caution should be taken with this action */}
-//     <Button bsStyle="warning">Warning</Button>
-
-//     {/* Indicates a dangerous or potentially negative action */}
-//     <Button bsStyle="danger">Danger</Button>
-
-//     {/* Deemphasize a button by making it look like a link while maintaining button behavior */}
-//     <Button bsStyle="link">Link</Button>
-//   </ButtonToolbar>
-// );
-
-// const jumbotronInstance = (
-//   <Jumbotron>
-//     <h1>Hello, world!</h1>
-//     <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-//     <p><Button bsStyle="primary">Learn more</Button></p>
-//   </Jumbotron>
-// );
-
-// ReactDOM.render(jumbotronInstance, mountNode);
-
-// ReactDOM.render(buttonsInstance, mountNode);
 exports.default = (0, _reactRedux.connect)(function (state) {
   return state;
 })(function (_ref) {
@@ -97,138 +66,128 @@ exports.default = (0, _reactRedux.connect)(function (state) {
   return _react2.default.createElement('div', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 28
     }
   }, _react2.default.createElement(_head2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 29
     }
   }, _react2.default.createElement('title', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 30
     }
   }, 'Simply Social'), _react2.default.createElement('link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css', __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 31
     }
   }), _react2.default.createElement('link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 32
     }
   }), _react2.default.createElement('link', { rel: 'stylesheet', href: '/static/custom.css', __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 33
     }
-  })), _react2.default.createElement(_Nav2.default, { className: 'navbar navbar-light bg-light justify-content-between', __source: {
+  })), _react2.default.createElement(_Nav2.default, { className: 'navbar navbar-dark bg-dark', __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 36
     }
   }, _react2.default.createElement('a', { className: 'navbar-brand', __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 37
     }
-  }, 'Navbar'), _react2.default.createElement(_Form2.default, { className: 'form-inline', __source: {
+  }, 'Navbar'), _react2.default.createElement(_Form2.default, { className: 'form-inline pull-right', __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 38
     }
   }, _react2.default.createElement('input', { className: 'form-control mr-sm-2', type: 'search', placeholder: 'Search', 'aria-label': 'Search', __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 39
     }
   }), _react2.default.createElement(_Button2.default, { className: 'btn btn-outline-success my-2 my-sm-0', type: 'submit', __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 40
     }
   }, 'Search'))), _react2.default.createElement(_Jumbotron2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 43
     }
   }, _react2.default.createElement('h1', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 44
     }
   }, 'Hello, world!'), _react2.default.createElement('p', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 45
     }
   }, 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.'), _react2.default.createElement('p', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 46
     }
   }, _react2.default.createElement(_Button2.default, { bsStyle: 'primary', __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 46
     }
-  }, 'Learn more'))), _react2.default.createElement('div', {
+  }, 'Learn more')), _react2.default.createElement('nav', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
-    }
-  }, _react2.default.createElement('h1', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    }
-  }, title), _react2.default.createElement(_Clock2.default, { lastUpdate: lastUpdate, light: light, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    }
-  }), _react2.default.createElement(_Button2.default, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    }
-  }, 'Default'), _react2.default.createElement(_AddCount2.default, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    }
-  }), _react2.default.createElement('nav', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 47
     }
   }, _react2.default.createElement(_link2.default, { href: linkTo, __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 48
     }
   }, _react2.default.createElement('a', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 48
     }
-  }, 'Navigate')))));
+  }, 'Navigate'))), _react2.default.createElement(_Nav2.default, { bsStyle: 'tabs', activeKey: '1', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    }
+  }, _react2.default.createElement(_NavItem2.default, { eventKey: '1', href: '/other', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    }
+  }, 'ALL POSTS'), _react2.default.createElement(_NavItem2.default, { eventKey: '2', title: 'Item', href: '/', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    }
+  }, 'PHOTOS'), _react2.default.createElement(_NavItem2.default, { eventKey: '3', title: 'NextItem', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    }
+  }, 'VIDEOS'))), _react2.default.createElement('div', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    }
+  }, _react2.default.createElement('h1', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    }
+  }, title), _react2.default.createElement(_Clock2.default, { lastUpdate: lastUpdate, light: light, __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    }
+  }), _react2.default.createElement(_Button2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    }
+  }, 'Default'), _react2.default.createElement(_AddCount2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    }
+  })));
 });
-
-
-{/* <Layout>
-         <Nav className="navbar navbar-light bg-light justify-content-between">
-          <a className="navbar-brand">Navbar</a>
-          <Form className="form-inline">
-            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-            <Button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</Button>
-          </Form>
-        </Nav>
-         <Jumbotron>
-          <h1>Hello, world!</h1>
-          <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <p><Button bsStyle="primary">Learn more</Button></p>
-        </Jumbotron>
-         <div>
-          <h1>{title}</h1>
-          <Clock lastUpdate={lastUpdate} light={light} />
-          <Button>Default</Button>
-          <AddCount />
-          <nav>
-            <Link href={linkTo}><a>Navigate</a></Link>
-          </nav>
-        </div>
-   
-      </Layout> */}
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvUGFnZS5qcyJdLCJuYW1lcyI6WyJMaW5rIiwiY29ubmVjdCIsIkNsb2NrIiwiQWRkQ291bnQiLCJCdXR0b24iLCJKdW1ib3Ryb24iLCJOYXYiLCJGb3JtIiwiSGVhZCIsInN0YXRlIiwidGl0bGUiLCJsaW5rVG8iLCJsYXN0VXBkYXRlIiwibGlnaHQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQSxBQUFPOzs7O0FBQ1AsQUFBUzs7QUFDVCxBQUFPLEFBQVc7Ozs7QUFDbEIsQUFBTyxBQUFjOzs7O0FBRXJCLEFBQU87Ozs7QUFDUCxBQUFPOzs7O0FBQ1AsQUFBTzs7OztBQUNQLEFBQU87Ozs7QUFFUCxBQUFPOzs7Ozs7O0FBTlA7O0FBS0E7OztBQUdBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7O0FBRUE7QUFDQTs7QUFFQTtBQUNBOztBQUVBO0FBQ0E7O0FBRUE7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTs7QUFFQSxBQUNBOzJDQUF1QixpQkFBQTtTQUFBLEFBQVM7QUFBakIsQ0FBQSxFQUF3QixnQkFBMEM7TUFBdkMsQUFBdUMsYUFBdkMsQUFBdUM7TUFBaEMsQUFBZ0MsY0FBaEMsQUFBZ0M7TUFBeEIsQUFBd0Isa0JBQXhCLEFBQXdCO01BQVosQUFBWSxhQUFaLEFBQVksQUFDL0U7O3lCQUNFLGNBQUE7O2dCQUFBO2tCQUFBLEFBQ0U7QUFERjtBQUFBLEdBQUEsa0JBQ0UsQUFBQzs7Z0JBQUQ7a0JBQUEsQUFDRTtBQURGO0FBQUEscUJBQ0UsY0FBQTs7Z0JBQUE7a0JBQUE7QUFBQTtBQUFBLEtBREYsQUFDRSxBQUNBLDBEQUFNLEtBQU4sQUFBVSxjQUFhLE1BQXZCLEFBQTRCO2dCQUE1QjtrQkFGRixBQUVFLEFBQ0E7QUFEQTs4Q0FDTSxLQUFOLEFBQVUsY0FBYSxNQUF2QixBQUE0QjtnQkFBNUI7a0JBSEYsQUFHRSxBQUNBO0FBREE7OENBQ00sS0FBTixBQUFVLGNBQWEsTUFBdkIsQUFBNEI7Z0JBQTVCO2tCQUxKLEFBQ0UsQUFJRSxBQUdGO0FBSEU7dUJBR0YsQUFBQywrQkFBSSxXQUFMLEFBQWU7Z0JBQWY7a0JBQUEsQUFDRTtBQURGO3FCQUNFLGNBQUEsT0FBRyxXQUFILEFBQWE7Z0JBQWI7a0JBQUE7QUFBQTtLQURGLEFBQ0UsQUFDQSwyQkFBQSxBQUFDLGdDQUFLLFdBQU4sQUFBZ0I7Z0JBQWhCO2tCQUFBLEFBQ0U7QUFERjs4Q0FDUyxXQUFQLEFBQWlCLHdCQUF1QixNQUF4QyxBQUE2QyxVQUFTLGFBQXRELEFBQWtFLFVBQVMsY0FBM0UsQUFBc0Y7Z0JBQXRGO2tCQURGLEFBQ0UsQUFDQTtBQURBO3NCQUNBLEFBQUMsa0NBQU8sV0FBUixBQUFrQix3Q0FBdUMsTUFBekQsQUFBOEQ7Z0JBQTlEO2tCQUFBO0FBQUE7S0FaTixBQVFFLEFBRUUsQUFFRSxBQUlKLDZCQUFBLEFBQUM7O2dCQUFEO2tCQUFBLEFBQ0U7QUFERjtBQUFBLHFCQUNFLGNBQUE7O2dCQUFBO2tCQUFBO0FBQUE7QUFBQSxLQURGLEFBQ0UsQUFDQSxrQ0FBQSxjQUFBOztnQkFBQTtrQkFBQTtBQUFBO0FBQUEsS0FGRixBQUVFLEFBQ0EsbUpBQUEsY0FBQTs7Z0JBQUE7a0JBQUEsQUFBRztBQUFIO0FBQUEscUJBQUcsQUFBQyxrQ0FBTyxTQUFSLEFBQWdCO2dCQUFoQjtrQkFBQTtBQUFBO0tBbkJQLEFBZ0JFLEFBR0UsQUFBRyxBQUdMLGlDQUFBLGNBQUE7O2dCQUFBO2tCQUFBLEFBQ0U7QUFERjtBQUFBLHFCQUNFLGNBQUE7O2dCQUFBO2tCQUFBLEFBQUs7QUFBTDtBQUFBLEtBREYsQUFDRSxBQUNBLHdCQUFBLEFBQUMsaUNBQU0sWUFBUCxBQUFtQixZQUFZLE9BQS9CLEFBQXNDO2dCQUF0QztrQkFGRixBQUVFLEFBQ0E7QUFEQTtzQkFDQSxBQUFDOztnQkFBRDtrQkFBQTtBQUFBO0FBQUEsS0FIRixBQUdFLEFBQ0EsNEJBQUEsQUFBQzs7Z0JBQUQ7a0JBSkYsQUFJRSxBQUNBO0FBREE7QUFBQSxzQkFDQSxjQUFBOztnQkFBQTtrQkFBQSxBQUNFO0FBREY7QUFBQSxxQkFDRSxBQUFDLGdDQUFLLE1BQU4sQUFBWTtnQkFBWjtrQkFBQSxBQUFvQjtBQUFwQjtxQkFBb0IsY0FBQTs7Z0JBQUE7a0JBQUE7QUFBQTtBQUFBLEtBN0I1QixBQUNFLEFBc0JFLEFBS0UsQUFDRSxBQUFvQixBQUs3QjtBQW5DRCxBQUFlOzs7QUF1Q2YsQ0FBQyxBQTJCZ0IiLCJmaWxlIjoiUGFnZS5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvc3RldmVuL0RvY3VtZW50cy9HaXRIdWIvaGFtL2ludmlzaW9uL2V4YW1wbGUvd2l0aC1yZWR1eCJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvUGFnZS5qcyJdLCJuYW1lcyI6WyJMaW5rIiwiY29ubmVjdCIsIkNsb2NrIiwiQWRkQ291bnQiLCJCdXR0b24iLCJKdW1ib3Ryb24iLCJOYXYiLCJOYXZJdGVtIiwiRm9ybSIsIkhlYWQiLCJzdGF0ZSIsInRpdGxlIiwibGlua1RvIiwibGFzdFVwZGF0ZSIsImxpZ2h0Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQUEsQUFBTzs7OztBQUNQLEFBQVM7O0FBQ1QsQUFBTyxBQUFXOzs7O0FBQ2xCLEFBQU8sQUFBYzs7OztBQUVyQixBQUFPOzs7O0FBQ1AsQUFBTzs7OztBQUNQLEFBQU87Ozs7QUFDUCxBQUFPOzs7O0FBQ1AsQUFBTzs7OztBQUNQLEFBQU87Ozs7Ozs7QUFOUDs7O0FBYUEsQUFRQTs7OzJDQUF1QixpQkFBQTtTQUFBLEFBQVM7QUFBakIsQ0FBQSxFQUF3QixnQkFBMEM7TUFBdkMsQUFBdUMsYUFBdkMsQUFBdUM7TUFBaEMsQUFBZ0MsY0FBaEMsQUFBZ0M7TUFBeEIsQUFBd0Isa0JBQXhCLEFBQXdCO01BQVosQUFBWSxhQUFaLEFBQVksQUFDL0U7O3lCQUNFLGNBQUE7O2dCQUFBO2tCQUFBLEFBQ0U7QUFERjtBQUFBLEdBQUEsa0JBQ0UsQUFBQzs7Z0JBQUQ7a0JBQUEsQUFDRTtBQURGO0FBQUEscUJBQ0UsY0FBQTs7Z0JBQUE7a0JBQUE7QUFBQTtBQUFBLEtBREYsQUFDRSxBQUNBLDBEQUFNLEtBQU4sQUFBVSxjQUFhLE1BQXZCLEFBQTRCO2dCQUE1QjtrQkFGRixBQUVFLEFBQ0E7QUFEQTs4Q0FDTSxLQUFOLEFBQVUsY0FBYSxNQUF2QixBQUE0QjtnQkFBNUI7a0JBSEYsQUFHRSxBQUNBO0FBREE7OENBQ00sS0FBTixBQUFVLGNBQWEsTUFBdkIsQUFBNEI7Z0JBQTVCO2tCQUxKLEFBQ0UsQUFJRSxBQUdGO0FBSEU7dUJBR0YsQUFBQywrQkFBSSxXQUFMLEFBQWU7Z0JBQWY7a0JBQUEsQUFDRTtBQURGO3FCQUNFLGNBQUEsT0FBRyxXQUFILEFBQWE7Z0JBQWI7a0JBQUE7QUFBQTtLQURGLEFBQ0UsQUFDQSwyQkFBQSxBQUFDLGdDQUFLLFdBQU4sQUFBZ0I7Z0JBQWhCO2tCQUFBLEFBQ0U7QUFERjs4Q0FDUyxXQUFQLEFBQWlCLHdCQUF1QixNQUF4QyxBQUE2QyxVQUFTLGFBQXRELEFBQWtFLFVBQVMsY0FBM0UsQUFBc0Y7Z0JBQXRGO2tCQURGLEFBQ0UsQUFDQTtBQURBO3NCQUNBLEFBQUMsa0NBQU8sV0FBUixBQUFrQix3Q0FBdUMsTUFBekQsQUFBOEQ7Z0JBQTlEO2tCQUFBO0FBQUE7S0FaTixBQVFFLEFBRUUsQUFFRSxBQUdKLDZCQUFBLEFBQUM7O2dCQUFEO2tCQUFBLEFBQ0U7QUFERjtBQUFBLHFCQUNFLGNBQUE7O2dCQUFBO2tCQUFBO0FBQUE7QUFBQSxLQURGLEFBQ0UsQUFDQSxrQ0FBQSxjQUFBOztnQkFBQTtrQkFBQTtBQUFBO0FBQUEsS0FGRixBQUVFLEFBQ0EsbUpBQUEsY0FBQTs7Z0JBQUE7a0JBQUEsQUFBRztBQUFIO0FBQUEscUJBQUcsQUFBQyxrQ0FBTyxTQUFSLEFBQWdCO2dCQUFoQjtrQkFBQTtBQUFBO0tBSEwsQUFHRSxBQUFHLEFBQ0gsZ0NBQUEsY0FBQTs7Z0JBQUE7a0JBQUEsQUFDRTtBQURGO0FBQUEscUJBQ0UsQUFBQyxnQ0FBSyxNQUFOLEFBQVk7Z0JBQVo7a0JBQUEsQUFBb0I7QUFBcEI7cUJBQW9CLGNBQUE7O2dCQUFBO2tCQUFBO0FBQUE7QUFBQSxLQUx4QixBQUlFLEFBQ0UsQUFBb0IsQUFleEIsK0JBQUEsQUFBQywrQkFBSSxTQUFMLEFBQWEsUUFBTyxXQUFwQixBQUE4QjtnQkFBOUI7a0JBQUEsQUFDSTtBQURKO3FCQUNJLEFBQUMsbUNBQVEsVUFBVCxBQUFrQixLQUFJLE1BQXRCLEFBQTJCO2dCQUEzQjtrQkFBQTtBQUFBO0tBREosQUFDSSxBQUNBLDhCQUFBLEFBQUMsbUNBQVEsVUFBVCxBQUFrQixLQUFJLE9BQXRCLEFBQTRCLFFBQU8sTUFBbkMsQUFBd0M7Z0JBQXhDO2tCQUFBO0FBQUE7S0FGSixBQUVJLEFBQ0EsMkJBQUEsQUFBQyxtQ0FBUSxVQUFULEFBQWtCLEtBQUksT0FBdEIsQUFBNEI7Z0JBQTVCO2tCQUFBO0FBQUE7S0F0Q04sQUFlRSxBQW9CQSxBQUdJLEFBSUosNkJBQUEsY0FBQTs7Z0JBQUE7a0JBQUEsQUFDRTtBQURGO0FBQUEscUJBQ0UsY0FBQTs7Z0JBQUE7a0JBQUEsQUFBSztBQUFMO0FBQUEsS0FERixBQUNFLEFBQ0Esd0JBQUEsQUFBQyxpQ0FBTSxZQUFQLEFBQW1CLFlBQVksT0FBL0IsQUFBc0M7Z0JBQXRDO2tCQUZGLEFBRUUsQUFDQTtBQURBO3NCQUNBLEFBQUM7O2dCQUFEO2tCQUFBO0FBQUE7QUFBQSxLQUhGLEFBR0UsQUFDQSw0QkFBQSxBQUFDOztnQkFBRDtrQkEvQ04sQUFDRSxBQTBDRSxBQUlFLEFBS1A7QUFMTztBQUFBO0FBaERSLEFBQWUiLCJmaWxlIjoiUGFnZS5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvc3RldmVuL0RvY3VtZW50cy9HaXRIdWIvaGFtL2ludmlzaW9uL2V4YW1wbGUvd2l0aC1yZWR1eCJ9
